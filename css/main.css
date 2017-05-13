@@ -15,8 +15,8 @@ ul li{list-style: none;}
 
  .banner .header>ul{
     display:flex;
-    flex-wrap: wrap;
  }
+
  .banner ul>li{
     font-size:0.6em;
     padding-right:6em;
@@ -59,7 +59,9 @@ ul li{list-style: none;}
     }
  }
  @media (max-width:460px){
-.banner .header{display: none;}
+.banner .header{width:100%;}
+.banner .header>ul{justify-content: space-around;}
+.banner .header li{padding:0;}
 .banner .slogan{padding-left:3em;}
  }
 /*intro*/
@@ -210,3 +212,24 @@ top:0;left:0;opacity: 0;}
     color:white;
     box-shadow:0em 0em 1em #FF73B3;
   }
+  /*gototop*/
+  #gototop{
+      position: fixed;
+      bottom: 10%;
+      right:0;
+      width:50px;
+      height:50px;
+      background:hsla(0,0%,0%,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index:1;
+  }
+  .triangle {
+    margin-top:8px;
+    border-right: 8px solid; 
+    border-bottom: 8px solid;
+    height: 25px;
+    width: 25px;
+    transform: rotate(-135deg);
+}
